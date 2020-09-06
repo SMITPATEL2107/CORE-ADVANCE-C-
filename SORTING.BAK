@@ -1,0 +1,32 @@
+	#include<stdio.h>
+	#include<conio.h>
+	void main()
+	{
+	 int t,i,j,a[5],n=5;
+	 clrscr();
+	 for(i=0;i<n;i++)
+	 {
+	 printf("enter element");
+	 scanf("%d",&a[i]);
+	 }
+	 for(i=0;i<n;i++)
+	 {
+	 for(j=0;j<(n-i-1);j++)
+	 {
+	  if(a[i]>a[j+1])
+	  {
+	   printf("shor:");
+	   t=a[i];
+	   a[i]=a[j+1];
+	   a[j+1]=t;
+	  // printf("%d",a[j+1]);
+	  }
+	 }
+	 }
+	 printf("\nshorting array");
+	 for(i=0;i<n;i++)
+	 {
+	  printf("%d",a[i]);
+	 }
+	 getch();
+	}
